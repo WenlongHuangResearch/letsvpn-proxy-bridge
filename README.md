@@ -4,6 +4,8 @@
 
 ## 使用
 
+仓库已包含构建好的 `dist\ProxyLauncher.exe`，克隆后可直接运行，无需安装 Python 或自行构建。
+
 1. 打开 LetsVPN / 快连并确认已经连接。
 2. 双击 `dist\ProxyLauncher.exe`，保持窗口运行。
 3. 使用 VS Code SSH 连接 Linux。Linux 的 `http_proxy` / `https_proxy` 通过既有 SSH RemoteForward 访问 Windows 代理。
@@ -38,7 +40,7 @@ EXE 日志位于 EXE 同目录的 `logs\proxy.log`（本项目中为 `dist\logs\
 .\build.bat
 ```
 
-生成文件：`dist\ProxyLauncher.exe`（Windows x64，单文件 GUI）。最终用户只需要这个 EXE，不需要安装 Python、pip 或 proxy.py。构建会创建项目独立的 `.venv`，并打包 Python 和 Tk。构建失败会返回错误，不会误报构建成功。
+生成文件：`dist\ProxyLauncher.exe`（Windows x64，单文件 GUI，已提交到仓库）。最终用户只需要这个 EXE，不需要安装 Python、pip 或 proxy.py。构建会创建项目独立的 `.venv`，并打包 Python 和 Tk。构建失败会返回错误，不会误报构建成功。
 
 ## 验收
 

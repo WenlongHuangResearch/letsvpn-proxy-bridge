@@ -1,6 +1,6 @@
 .venv/
 build/
-dist/
+dist/logs/
 *.spec
 logs/
 __pycache__/
